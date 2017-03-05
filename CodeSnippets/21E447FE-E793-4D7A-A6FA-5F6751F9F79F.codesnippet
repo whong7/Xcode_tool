@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wh-button</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *btn = [[UIButton alloc]init];
+
+//设置btn的内容 ：uinormal
+[btn setTitle:@"&lt;#content#&gt;" forState:UIControlStateNormal];
+//设置btn的字体
+btn.font = [UIFont systemFontOfSize:14];
+//设置btn的字体颜色
+[btn setTitleColor:[UIColor &lt;#darkGrayColor#&gt;] forState:UIControlStateNormal];
+[btn setTitleColor:[UIColor &lt;#grayColor#&gt;] forState:UIControlStateHighlighted];
+//设置背景
+btn.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
+//设置frame
+btn.frame = &lt;#CGRectMake(0, 0, 0, 44)#&gt;;
+
+//自动适应
+[btn sizeToFit];
+
+//添加监听
+[btn addTarget:self action:@selector(Click) forControlEvents:UIControlEventTouchUpInside];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>21E447FE-E793-4D7A-A6FA-5F6751F9F79F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wh-button</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wh-button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

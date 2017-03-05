@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wh-loadData</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (NSArray*)load&lt;#what#&gt;Data
+{
+    //加载plist
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"&lt;#plistname#&gt;.plist" withExtension:nil];
+    NSArray *tempArray = [NSArray arrayWithContentsOfURL:url];
+    NSMutableArray *array = [NSMutableArray array];
+    
+    //遍历数组
+    for (NSDictionary *dict in tempArray) {
+        [array addObject:[&lt;#字典转模型 类方法#&gt;]];
+    }
+    
+    //返回组数
+    return array.copy;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D3B9D179-825D-4DE4-8801-1278DB2E823F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wh-loadData</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wh-loadData</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

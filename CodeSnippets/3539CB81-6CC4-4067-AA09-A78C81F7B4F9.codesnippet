@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wh-cell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//设定cellid
+static NSString *cellid = @"&lt;#id#&gt;_cell";
+
+//找代理
+tableView.dataSource = self;
+tableView.delegate = self;
+
+//注册单元格
+[self.tableView registerClass:[&lt;#UITableViewCell#&gt; class] forCellReuseIdentifier:cellid];
+
+//有多少组
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return &lt;#section#&gt;;
+}
+//某一组有多少行
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return &lt;#row#&gt;;
+}
+//cell的内容
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //取缓存池找
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid forIndexPath:indexPath];
+    
+    return cell;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3539CB81-6CC4-4067-AA09-A78C81F7B4F9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wh-cell</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wh-cell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

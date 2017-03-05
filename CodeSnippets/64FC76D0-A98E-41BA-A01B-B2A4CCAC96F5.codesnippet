@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wh-pageControl</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//创建pageControl
+UIPageControl *pageControl = [[UIPageControl alloc]init];
+//默认颜色
+pageControl.pageIndicatorTintColor = [UIColor colorWithWhite:0.8 alpha:1];
+//当前颜色
+pageControl.currentPageIndicatorTintColor = [UIColor colorWithWhite:0.5 alpha:1];
+//总页数
+pageControl.numberOfPages = 2;
+//禁用用户交互
+pageControl.userInteractionEnabled = NO;
+//添加页点
+[self addSubview:pageControl];
+
+//布局pageControl
+[pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.centerX.equalTo(self);
+    make.bottom.offset(4);
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>64FC76D0-A98E-41BA-A01B-B2A4CCAC96F5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wh-pageControl</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wh-pageControl</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

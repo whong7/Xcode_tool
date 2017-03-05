@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wh-Label1</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UILabel *WHLabel1 = [[UILabel alloc]init];
+
+//内容（颜色+字体）
+WHLabel1.text = @"&lt;#content#&gt;";
+WHLabel1.textColor = [UIColor &lt;#redColor#&gt;];
+WHLabel1.font = [UIFont systemFontOfSize:&lt;#size#&gt;];
+//坐标
+WHLabel1.frame = &lt;#CGRectMake(0, 0, 0, 44)#&gt;;
+[WHLabel1 sizeToFit];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F2A405AA-6EFE-43BE-9D20-CAAB0F0241AA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wh-Label1</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wh-Label1</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
