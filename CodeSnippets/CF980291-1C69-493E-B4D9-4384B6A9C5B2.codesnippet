@@ -6,7 +6,7 @@
 	<string>wh-snp</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>&lt;#view#&gt;.snp_makeConstraints{ (make) -&gt; Void in

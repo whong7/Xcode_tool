@@ -6,7 +6,7 @@
 	<string>wh-pfunc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string> private func &lt;#name#&gt;(){
