@@ -73,52 +73,52 @@ static SQLiteManager *manager = nil;
         NSLog(@"数据库打开失败");
     }
 }
-////删除
-//- (void)deleteContact:(Contact *)contact{
-//    if ([self.db open]) {
-//        BOOL result = [self.db executeUpdate:@"delete from t_contact where phoneNum = ?",contact.phoneNum];
-//        if (result) {
-//            NSLog(@"创建成功");
-//        }else{
-//            NSLog(@"创建失败");
-//        }
-//        [self.db close];
-//    }else{
-//        NSLog(@"数据库打开失败");
-//    }
-//}
-////修改数据
-//- (void)updateContact:(Contact *)contact
-//{
-//    if ([self.db open]) {
-//        BOOL result = [self.db executeUpdate:@"UPDATE t_contact SET name = ?,phoneNum = ? WHERE phoneNum = ?",
-//                       contact.name,contact.phoneNum,contact.phoneNum];
-//        if (result) {
-//            NSLog(@"修改成功");
-//        }
-//        else
-//        {
-//            NSLog(@"修改失败");
-//        } [self.db close];
-//    }else{
-//        NSLog(@"数据库打开失败");
-//    }
-//}
-////查询
-//- (NSArray *)queryContact{
-//    NSMutableArray *arr = [NSMutableArray array];
-//    if ([self.db open]) {
-//        FMResultSet *set = [self.db executeQuery:@"SELECT * FROM t_contact"];
-//        while ([set next]) {
-//            NSInteger ID = [set intForColumn:@"id"];
-//            NSString *name = [set stringForColumn:@"name"];
-//            NSString *phoneNum = [set stringForColumn:@"phoneNum"];
-//            Contact *contact = [[Contact alloc]initWithName:name phoneNum:phoneNum ID:ID];
-//            [arr addObject:contact];
-//        }
-//    }
-//    return arr;
-//}
+//删除
+- (void)deleteContact:(Contact *)contact{
+    if ([self.db open]) {
+        BOOL result = [self.db executeUpdate:@"delete from t_contact where phoneNum = ?",contact.phoneNum];
+        if (result) {
+            NSLog(@"创建成功");
+        }else{
+            NSLog(@"创建失败");
+        }
+        [self.db close];
+    }else{
+        NSLog(@"数据库打开失败");
+    }
+}
+//修改数据
+- (void)updateContact:(Contact *)contact
+{
+    if ([self.db open]) {
+        BOOL result = [self.db executeUpdate:@"UPDATE t_contact SET name = ?,phoneNum = ? WHERE phoneNum = ?",
+                       contact.name,contact.phoneNum,contact.phoneNum];
+        if (result) {
+            NSLog(@"修改成功");
+        }
+        else
+        {
+            NSLog(@"修改失败");
+        } [self.db close];
+    }else{
+        NSLog(@"数据库打开失败");
+    }
+}
+//查询
+- (NSArray *)queryContact{
+    NSMutableArray *arr = [NSMutableArray array];
+    if ([self.db open]) {
+        FMResultSet *set = [self.db executeQuery:@"SELECT * FROM t_contact"];
+        while ([set next]) {
+            NSInteger ID = [set intForColumn:@"id"];
+            NSString *name = [set stringForColumn:@"name"];
+            NSString *phoneNum = [set stringForColumn:@"phoneNum"];
+            Contact *contact = [[Contact alloc]initWithName:name phoneNum:phoneNum ID:ID];
+            [arr addObject:contact];
+        }
+    }
+    return arr;
+}
 
 
 
