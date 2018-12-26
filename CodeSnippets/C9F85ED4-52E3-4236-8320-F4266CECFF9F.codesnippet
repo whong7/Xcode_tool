@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wh_lzbutton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //MARK:&lt;#contain#&gt;
+    lazy var &lt;#name#&gt; : UIButton = {
+        let btn = UIButton()
+        btn.setTitle(&lt;#T##title: String?##String?#&gt;, for: &lt;#T##UIControlState#&gt;)
+        btn.setBackgroundImage(&lt;#T##image: UIImage?##UIImage?#&gt;, for: &lt;#T##UIControlState#&gt;)
+        btn.setImage(&lt;#T##image: UIImage?##UIImage?#&gt;, for: &lt;#T##UIControlState#&gt;)
+        btn.addTarget(&lt;#T##target: Any?##Any?#&gt;, action: &lt;#T##Selector#&gt;, for: &lt;#T##UIControlEvents#&gt;)
+        return btn
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C9F85ED4-52E3-4236-8320-F4266CECFF9F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wh_lzbutton</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wh_lzbutton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

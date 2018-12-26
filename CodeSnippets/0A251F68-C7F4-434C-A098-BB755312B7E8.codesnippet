@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wh_lzlabel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    lazy var &lt;#name#&gt; : UILabel = {
+        let label = UILabel()
+        label.text = &lt;#text#&gt;
+        label.font = UIFont.systemFont(ofSize: &lt;#T##CGFloat#&gt;)
+        label.textColor = &lt;#color#&gt;
+        return label
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0A251F68-C7F4-434C-A098-BB755312B7E8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wh_lzlabel</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wh_lzlabel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
